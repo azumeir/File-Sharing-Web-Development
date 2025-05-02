@@ -1,10 +1,26 @@
 .App {
   text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: auto;
+  max-width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +38,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.App-logo {
+  max-width: 100%;
+  height: auto;
 }
 
 .App-link {
@@ -34,5 +58,29 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive design for different screen sizes */
+@media screen and (max-width: 768px) {
+  .App-header {
+    padding: 10px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App-header {
+    padding: 5px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 12px;
+    width: 90%;
   }
 }

@@ -1,3 +1,4 @@
+import Button from './Components/button';
 import logo from './logo.svg';
 import './App.css';
 
@@ -7,16 +8,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> hi there.
+          hi there click the button. <br />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Button url = 'https://www.google.com' text = 'Going to Google'/>
+          <Button url = 'https://www.youtube.com' text = 'Going to Youtube'/>
+          <Button url = 'https://www.facebook.com' text = 'Going to Facebook'/>
+        
       </header>
     </div>
   );
